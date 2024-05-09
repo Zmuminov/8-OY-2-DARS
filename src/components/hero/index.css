@@ -1,0 +1,102 @@
+@import url(https://fonts.googleapis.com/css2?family=Manrope:wght@100;200;300;400;500;600;800&display=swap);
+
+.hero {
+  margin-top: 25px;
+  max-width: 1450px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid rgb(193, 193, 193);
+  border-radius: 20px;
+}
+.hero__top {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.hero__top__subProject {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.hero__top__subProject__text {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.hero__top__subProject__title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: 0.10000000149011612px;
+  text-align: center;
+  color: #171725;
+}
+.hero__top__input {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.hero__top__input__v2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.hero__top__input__v3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.hero__top__input__v2-children {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.MediumSpan {
+  font-family: Manrope;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  color: #504f54;
+  display: flex;
+  align-items: center;
+}
+.v2children-input {
+  width: 672px;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid rgb(193, 193, 193);
+  cursor: text;
+  outline: none;
+  background-color: #ebeaed;
+}
+/* HERO BOTTOM START */
+.hero__bottom {
+  background-color: #e2e2ea;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+}
+.OddiyTugma {
+  width: 700px;
+}
+.hero__bottom {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid rgb(193, 193, 193);
+}
+textarea {
+  width: 700px;
+  height: 200px;
+  resize: none;
+  outline: none;
+  border: 2px solid rgb(193, 193, 193);
+}
+textarea::placeholder {
+  font-size: large;
+}

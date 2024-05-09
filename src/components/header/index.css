@@ -1,0 +1,60 @@
+.header {
+  width: 100%;
+  background-color: white;
+  border-bottom: 2px solid rgb(193, 193, 193);
+}
+.header-container {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logoWrapper__img {
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.header__logoWrapper__img:hover {
+  opacity: 0.6;
+}
+.header__logoWrapper__img:active {
+  opacity: 1;
+}
+.header__nav__list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.header__nav__list__item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.header__dropdown__text {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.header__nav__list__item {
+  cursor: pointer;
+}
+.header__nav__list__item__img {
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.header__nav__list__item__text {
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.header__nav__list__item__img:hover {
+  opacity: 0.6;
+}
+.header__nav__list__item__text:hover {
+  opacity: 0.6;
+}
+.header__nav__list__item__img:active {
+  opacity: 1;
+}
+.header__nav__list__item__text:active {
+  opacity: 1;
+}
