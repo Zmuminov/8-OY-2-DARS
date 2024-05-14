@@ -8,14 +8,25 @@ import { purple } from "@mui/material/colors";
 import Box from "@mui/material/Box";
 import Slider from "@mui/material/Slider";
 import { useEffect } from "react";
+import Tab from "@mui/material/Tab";
+import TabContext from "@mui/lab/TabContext";
+import TabList from "@mui/lab/TabList";
+import TabPanel from "@mui/lab/TabPanel";
 // MY FILE
 import HeroTopIcon from "../../assets/heroTopIcon.svg";
 import trueIcon from "../../assets/trueIcon.svg";
+import phone from "../../assets/mobile.png";
 import "./index.css";
 function valuetext(value) {
   return `${value}°C`;
 }
 function Hero() {
+  // TABS
+  const [value, setValue] = React.useState("1");
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
   // TEXTAREA
   const [text, setText] = useState("");
   const [savedText, setSavedText] = useState("");
@@ -185,24 +196,45 @@ function Hero() {
         </div>
         <div className="hero__bottom">
           <div className="hero__bottom__top">
-            <textarea
-              placeholder="Enter text..."
-              value={text}
-              onChange={handleTextAreaChange}
-            />
-            <Stack spacing={2} direction="row">
-              <BootstrapButton
-                className="OddiyTugma"
-                onClick={handleSaveButtonClick}
-                variant="contained"
-                disableRipple
-              >
-                Send
-              </BootstrapButton>
-            </Stack>
+            <div>
+              <p className="paragraphv2">Shablon</p>
+              <input
+                className="inputv2"
+                placeholder="Enter here..."
+                type="text"
+              />
+            </div>
+            <div>
+              <p className="paragraphv2">Link</p>
+              <input
+                className="inputv2"
+                placeholder="Enter here..."
+                type="text"
+              />
+            </div>
+            <div className="tab">
+              <p className="paragraphv2">Habar</p>
+              <Box sx={{ width: "100%", typography: "body1" }}>
+                <TabContext value={value}>
+                  <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
+                    <TabList
+                      onChange={handleChange}
+                      aria-label="lab API tabs example"
+                    >
+                      <Tab label="O’zbekcha" value="1" />
+                      <Tab label="Русский" value="2" />
+                      <Tab label="English" value="3" />
+                    </TabList>
+                  </Box>
+                  <TabPanel value="1">Habar matni...</TabPanel>
+                  <TabPanel value="2">Текст сообщения...</TabPanel>
+                  <TabPanel value="3">Message text...</TabPanel>
+                </TabContext>
+              </Box>
+            </div>
           </div>
           <div className="hero__bottom__bottom">
-            <p className="hero__bottom__bottom__text">{savedText}</p>
+            <img src={phone} />
           </div>
         </div>
       </div>

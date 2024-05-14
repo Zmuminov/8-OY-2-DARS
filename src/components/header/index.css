@@ -1,7 +1,7 @@
 .header {
   width: 100%;
   background-color: white;
-  border-bottom: 2px solid rgb(193, 193, 193);
+  border-bottom: 2px solid #ebeaed;
 }
 .header-container {
   padding-top: 15px;
